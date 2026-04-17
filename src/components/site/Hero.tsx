@@ -4,7 +4,7 @@ import { WHATSAPP_LINK, HOSPITAL_PHONE_TEL } from "@/lib/contact";
 
 export const Hero = () => {
   return (
-    <section id="home" className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 bg-gradient-hero overflow-hidden">
+    <section id="home" className="relative pt-28 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32 bg-gradient-hero overflow-hidden">
       {/* Subtle medical cross motifs */}
       <div className="absolute inset-0 medical-bg pointer-events-none" />
       <div className="absolute top-32 right-12 opacity-[0.06] hidden md:block">
@@ -14,38 +14,42 @@ export const Hero = () => {
         </svg>
       </div>
 
-      <div className="container-page relative grid lg:grid-cols-12 gap-12 items-center">
+      <div className="container-page relative grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
         <div className="lg:col-span-7 animate-fade-in">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-soft text-accent text-xs font-semibold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 rounded-full bg-accent-soft text-accent text-[10px] sm:text-xs font-semibold uppercase tracking-wider">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
             Trusted GI Care · Tirupati
           </span>
-          <h1 className="mt-6 text-5xl sm:text-6xl lg:text-7xl font-bold text-primary leading-[1.05]">
+          <h1 className="mt-5 sm:mt-6 text-[2.5rem] leading-[1.05] sm:text-5xl lg:text-7xl font-bold text-primary">
             Expert Care for Your <em className="text-accent not-italic font-semibold">Digestive Health</em>
           </h1>
-          <p className="mt-6 text-lg lg:text-xl text-muted-foreground max-w-xl leading-relaxed">
+          <p className="mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-muted-foreground max-w-xl leading-relaxed">
             Led by <span className="text-primary font-semibold">Dr. Mahendra Reddy</span> — Gastrointestinal Surgeon, Tirupati. Compassionate care, precision surgery.
           </p>
 
-          <div className="mt-9 flex flex-wrap gap-4">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-7 h-12 shadow-card hover:shadow-lift transition-all hover:-translate-y-0.5">
+          <div className="mt-7 sm:mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-7 h-12 shadow-card hover:shadow-lift transition-all hover:-translate-y-0.5 w-full sm:w-auto">
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                 <CalendarCheck className="w-5 h-5 mr-1" /> Book on WhatsApp
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="rounded-full px-7 h-12 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all hover:-translate-y-0.5">
+            <Button asChild size="lg" variant="outline" className="rounded-full px-7 h-12 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all hover:-translate-y-0.5 w-full sm:w-auto">
               <a href={HOSPITAL_PHONE_TEL}><Phone className="w-5 h-5 mr-1" /> Call Now</a>
             </Button>
           </div>
 
-          <div className="mt-10 grid grid-cols-3 gap-4 max-w-lg">
+          {/* Trust badges - horizontal scroll on mobile, grid on larger */}
+          <div className="mt-8 sm:mt-10 -mx-5 sm:mx-0 px-5 sm:px-0 flex sm:grid sm:grid-cols-3 gap-3 sm:gap-4 max-w-lg overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-2 sm:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {[
               { icon: Award, label: "4.0★ Google" },
               { icon: Clock, label: "24/7 Available" },
               { icon: ShieldCheck, label: "Experienced" },
             ].map(({ icon: Icon, label }) => (
-              <div key={label} className="flex items-center gap-2 text-sm text-foreground/75">
-                <Icon className="w-4 h-4 text-accent" /> {label}
+              <div
+                key={label}
+                className="snap-start shrink-0 sm:shrink flex items-center gap-2 px-4 py-2.5 sm:px-0 sm:py-0 rounded-full sm:rounded-none bg-card sm:bg-transparent border sm:border-0 border-border/60 shadow-soft sm:shadow-none text-sm font-medium text-foreground/80 whitespace-nowrap"
+              >
+                <Icon className="w-4 h-4 text-accent shrink-0" /> {label}
               </div>
             ))}
           </div>
