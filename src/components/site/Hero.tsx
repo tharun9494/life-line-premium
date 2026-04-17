@@ -57,21 +57,21 @@ export const Hero = () => {
 
         {/* Visual card */}
         <div className="lg:col-span-5 animate-fade-in [animation-delay:200ms]">
-          <div className="relative">
-            <div className="absolute -inset-4 bg-gradient-teal rounded-[2rem] opacity-10 blur-2xl" />
-            <div className="relative rounded-[2rem] bg-card shadow-lift p-8 border border-border/60">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-secondary via-background to-accent-soft grid place-items-center relative overflow-hidden">
-                <svg viewBox="0 0 200 200" className="w-2/3 h-2/3 text-primary/25" fill="currentColor">
+          <div className="relative max-w-[280px] sm:max-w-sm mx-auto lg:max-w-none">
+            <div className="absolute -inset-3 sm:-inset-4 bg-gradient-teal rounded-[1.5rem] sm:rounded-[2rem] opacity-10 blur-2xl" />
+            <div className="relative rounded-[1.5rem] sm:rounded-[2rem] bg-card shadow-lift p-5 sm:p-8 border border-border/60">
+              <div className="aspect-square rounded-xl sm:rounded-2xl bg-gradient-to-br from-secondary via-background to-accent-soft grid place-items-center relative overflow-hidden">
+                <svg viewBox="0 0 200 200" className="w-1/2 sm:w-2/3 h-1/2 sm:h-2/3 text-primary/25" fill="currentColor">
                   <path d="M100 30c-25 0-45 18-45 42 0 35 45 78 45 78s45-43 45-78c0-24-20-42-45-42zm0 60a18 18 0 1 1 0-36 18 18 0 0 1 0 36z" />
                 </svg>
-                <div className="absolute bottom-0 inset-x-0 h-20 bg-gradient-to-t from-card to-transparent" />
+                <div className="absolute bottom-0 inset-x-0 h-16 sm:h-20 bg-gradient-to-t from-card to-transparent" />
               </div>
-              <div className="mt-6 flex items-center justify-between">
-                <div>
-                  <div className="font-display font-semibold text-primary text-lg">Dr. Mahendra Reddy</div>
-                  <div className="text-xs text-muted-foreground uppercase tracking-wider">GI Surgeon · MBBS, MS</div>
+              <div className="mt-4 sm:mt-6 flex items-center justify-between gap-3">
+                <div className="min-w-0">
+                  <div className="font-display font-semibold text-primary text-base sm:text-lg truncate">Dr. Mahendra Reddy</div>
+                  <div className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider">GI Surgeon · MBBS, MS</div>
                 </div>
-                <span className="px-3 py-1 rounded-full bg-accent-soft text-accent text-xs font-bold">4.0 ★</span>
+                <span className="shrink-0 px-2.5 sm:px-3 py-1 rounded-full bg-accent-soft text-accent text-[10px] sm:text-xs font-bold">4.0 ★</span>
               </div>
             </div>
           </div>
