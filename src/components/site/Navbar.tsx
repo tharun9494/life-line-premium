@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { WHATSAPP_LINK, HOSPITAL_PHONE_TEL, HOSPITAL_PHONE_DISPLAY } from "@/lib/contact";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -53,11 +54,11 @@ export const Navbar = () => {
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
-          <a href="tel:08772228633" className="flex items-center gap-2 text-sm text-primary font-semibold">
-            <Phone className="w-4 h-4" /> 0877 222 8633
+          <a href={HOSPITAL_PHONE_TEL} className="flex items-center gap-2 text-sm text-primary font-semibold hover:text-accent transition-colors">
+            <Phone className="w-4 h-4" /> {HOSPITAL_PHONE_DISPLAY}
           </a>
-          <Button asChild variant="default" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-5">
-            <a href="https://book-appointment.healthplix.com" target="_blank" rel="noopener noreferrer">Book Appointment</a>
+          <Button asChild variant="default" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-5 shadow-soft hover:shadow-card transition-shadow">
+            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
           </Button>
         </div>
 
@@ -83,8 +84,11 @@ export const Navbar = () => {
                 {l.label}
               </a>
             ))}
+            <a href={HOSPITAL_PHONE_TEL} className="flex items-center gap-2 text-sm text-primary font-semibold pt-1">
+              <Phone className="w-4 h-4" /> {HOSPITAL_PHONE_DISPLAY}
+            </a>
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full mt-2">
-              <a href="https://book-appointment.healthplix.com" target="_blank" rel="noopener noreferrer">Book Appointment</a>
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Book on WhatsApp</a>
             </Button>
           </div>
         </div>
