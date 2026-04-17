@@ -20,7 +20,7 @@ export const Hero = () => {
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
             Trusted GI Care · Tirupati
           </span>
-          <h1 className="mt-5 sm:mt-6 text-[2.5rem] leading-[1.05] sm:text-5xl lg:text-7xl font-bold text-primary">
+          <h1 className="mt-5 sm:mt-6 text-[2rem] leading-[1.08] sm:text-5xl lg:text-7xl font-bold text-primary break-words">
             Expert Care for Your <em className="text-accent not-italic font-semibold">Digestive Health</em>
           </h1>
           <p className="mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-muted-foreground max-w-xl leading-relaxed">
