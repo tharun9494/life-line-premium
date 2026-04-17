@@ -78,7 +78,10 @@
   body {
     @apply bg-background text-foreground font-body;
     font-feature-settings: "ss01", "cv11";
+    overflow-x: hidden;
   }
+
+  html { overflow-x: hidden; }
 
   h1, h2, h3, h4, h5 {
     @apply font-display;
