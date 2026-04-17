@@ -4,7 +4,7 @@ import { WHATSAPP_LINK, HOSPITAL_PHONE_TEL, HOSPITAL_PHONE_DISPLAY } from "@/lib
 
 export const BookingCTA = () => {
   return (
-    <section className="relative py-24 lg:py-32 bg-gradient-teal text-primary-foreground overflow-hidden">
+    <section className="relative py-16 sm:py-24 lg:py-32 bg-gradient-teal text-primary-foreground overflow-hidden">
       {/* Decorative cross pattern */}
       <div className="absolute inset-0 opacity-[0.07]">
         <svg width="100%" height="100%">
@@ -18,32 +18,32 @@ export const BookingCTA = () => {
         </svg>
       </div>
 
-      <div className="container-page relative grid lg:grid-cols-12 gap-10 items-center">
+      <div className="container-page relative grid lg:grid-cols-12 gap-8 lg:gap-10 items-center">
         <div className="lg:col-span-7">
-          <span className="inline-flex px-4 py-1.5 rounded-full bg-primary-foreground/15 text-primary-foreground text-xs font-semibold uppercase tracking-wider">
+          <span className="inline-flex px-3 py-1.5 sm:px-4 rounded-full bg-primary-foreground/15 text-primary-foreground text-[10px] sm:text-xs font-semibold uppercase tracking-wider">
             Schedule a Visit
           </span>
-          <h2 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05]">
+          <h2 className="mt-4 sm:mt-5 text-3xl sm:text-4xl lg:text-6xl font-bold leading-[1.05]">
             Book Your Appointment <em className="not-italic text-accent-soft">Today</em>
           </h2>
-          <p className="mt-6 text-lg text-primary-foreground/85 max-w-xl leading-relaxed">
+          <p className="mt-5 sm:mt-6 text-base sm:text-lg text-primary-foreground/85 max-w-xl leading-relaxed">
             Visit us at Reddy & Reddy's Colony, Tirupati, Andhra Pradesh 517501. We're open 24 hours — your health doesn't wait, and neither do we.
           </p>
 
-          <div className="mt-9 flex flex-wrap gap-4">
-            <Button asChild size="lg" className="bg-gradient-gold hover:opacity-95 text-accent-foreground rounded-full px-8 h-13 shadow-lift hover:-translate-y-0.5 transition-transform">
+          <div className="mt-7 sm:mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <Button asChild size="lg" className="bg-gradient-gold hover:opacity-95 text-accent-foreground rounded-full px-8 h-12 sm:h-13 shadow-lift hover:-translate-y-0.5 transition-transform w-full sm:w-auto">
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                 <CalendarCheck className="w-5 h-5 mr-1" /> Book on WhatsApp
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="rounded-full px-8 h-13 border-2 border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent">
+            <Button asChild size="lg" variant="outline" className="rounded-full px-8 h-12 sm:h-13 border-2 border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent w-full sm:w-auto">
               <a href={HOSPITAL_PHONE_TEL}><Phone className="w-5 h-5 mr-1" /> {HOSPITAL_PHONE_DISPLAY}</a>
             </Button>
           </div>
         </div>
 
         <div className="lg:col-span-5">
-          <div className="rounded-3xl bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 p-8">
+          <div className="rounded-2xl sm:rounded-3xl bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 p-6 sm:p-8">
             <div className="space-y-5">
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-accent-soft mt-0.5" />
