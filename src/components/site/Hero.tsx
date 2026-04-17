@@ -15,7 +15,7 @@ export const Hero = () => {
       </div>
 
       <div className="container-page relative grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-        <div className="lg:col-span-7 animate-fade-in">
+        <div className="lg:col-span-7 animate-fade-in min-w-0 w-full">
           <span className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 rounded-full bg-accent-soft text-accent text-[10px] sm:text-xs font-semibold uppercase tracking-wider">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
             Trusted GI Care · Tirupati
