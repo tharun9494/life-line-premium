@@ -1,4 +1,5 @@
-import { MapPin, Phone, Clock, Mail } from "lucide-react";
+import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
+import { WHATSAPP_LINK, HOSPITAL_PHONE_TEL, HOSPITAL_PHONE_DISPLAY } from "@/lib/contact";
 
 export const Contact = () => {
   return (
