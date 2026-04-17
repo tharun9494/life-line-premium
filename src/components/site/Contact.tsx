@@ -28,10 +28,10 @@ export const Contact = () => {
 
           <div className="lg:col-span-5 space-y-4">
             {[
-              { icon: MapPin, title: "Address", value: "Reddy & Reddy's Colony, Tirupati, Andhra Pradesh 517501" },
-              { icon: Phone, title: "Phone", value: "0877 222 8633", href: "tel:08772228633" },
+              { icon: MapPin, title: "Address", value: "Reddy & Reddy's Colony, Tirupati, AP 517501" },
+              { icon: Phone, title: "Phone", value: HOSPITAL_PHONE_DISPLAY, href: HOSPITAL_PHONE_TEL },
               { icon: Clock, title: "Hours", value: "Open 24 Hours · 7 days a week" },
-              { icon: Mail, title: "Appointments", value: "book-appointment.healthplix.com", href: "https://book-appointment.healthplix.com" },
+              { icon: MessageCircle, title: "WhatsApp", value: "Chat with us instantly", href: WHATSAPP_LINK },
             ].map(({ icon: Icon, title, value, href }) => (
               <div key={title} className="group p-6 rounded-2xl bg-secondary/40 border border-border/60 hover:bg-secondary/80 hover:shadow-soft transition-all">
                 <div className="flex items-start gap-4">

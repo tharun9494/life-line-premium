@@ -46,7 +46,8 @@ export const Footer = () => {
             <ul className="mt-5 space-y-2.5 text-sm text-primary-foreground/85">
               <li>Reddy & Reddy's Colony</li>
               <li>Tirupati, Andhra Pradesh 517501</li>
-              <li><a href="tel:08772228633" className="hover:text-accent-soft">0877 222 8633</a></li>
+              <li><a href="tel:08772228633" className="hover:text-accent-soft transition-colors">0877 222 8633</a></li>
+              <li><a href="https://wa.me/918772228633" target="_blank" rel="noopener noreferrer" className="hover:text-accent-soft transition-colors">WhatsApp Chat</a></li>
               <li>Open 24 Hours</li>
             </ul>
           </div>

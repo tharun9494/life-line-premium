@@ -7,6 +7,7 @@ import Reviews from "@/components/site/Reviews";
 import BookingCTA from "@/components/site/BookingCTA";
 import Contact from "@/components/site/Contact";
 import Footer from "@/components/site/Footer";
+import WhatsAppFloat from "@/components/site/WhatsAppFloat";
 
 const Index = () => {
   const ldJson = {
@@ -43,6 +44,7 @@ const Index = () => {
       <BookingCTA />
       <Contact />
       <Footer />
+      <WhatsAppFloat />
     </main>
   );
 };
