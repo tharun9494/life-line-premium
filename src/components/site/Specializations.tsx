@@ -11,25 +11,25 @@ const items = [
 
 export const Specializations = () => {
   return (
-    <section id="specializations" className="py-24 lg:py-32 bg-secondary/60 relative">
+    <section id="specializations" className="py-16 sm:py-24 lg:py-32 bg-secondary/60 relative">
       <div className="container-page">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs uppercase tracking-[0.25em] text-accent font-bold">Our Expertise</span>
-          <h2 className="mt-3 text-4xl sm:text-5xl font-bold text-primary leading-tight">Specialized Care, Tailored to You</h2>
-          <p className="mt-5 text-lg text-muted-foreground">
+          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight">Specialized Care, Tailored to You</h2>
+          <p className="mt-4 sm:mt-5 text-base sm:text-lg text-muted-foreground">
             Comprehensive gastrointestinal and surgical services delivered with precision and care.
           </p>
         </div>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {items.map(({ icon: Icon, title, desc }) => (
-            <article key={title} className="card-lift bg-card rounded-2xl p-7 border border-border/60 group">
-              <div className="w-14 h-14 rounded-xl bg-secondary grid place-items-center text-primary group-hover:bg-gradient-teal group-hover:text-primary-foreground transition-all duration-300">
-                <Icon className="w-7 h-7" strokeWidth={1.6} />
+            <article key={title} className="card-lift bg-card rounded-2xl p-6 sm:p-7 border border-border/60 group active:scale-[0.99]">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-secondary grid place-items-center text-primary group-hover:bg-gradient-teal group-hover:text-primary-foreground transition-all duration-300">
+                <Icon className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={1.6} />
               </div>
-              <h3 className="mt-6 text-xl font-display font-semibold text-primary">{title}</h3>
-              <p className="mt-3 text-muted-foreground leading-relaxed">{desc}</p>
-              <div className="mt-5 inline-flex items-center text-sm font-semibold text-accent">
+              <h3 className="mt-5 sm:mt-6 text-lg sm:text-xl font-display font-semibold text-primary">{title}</h3>
+              <p className="mt-2 sm:mt-3 text-sm sm:text-base text-muted-foreground leading-relaxed">{desc}</p>
+              <div className="mt-4 sm:mt-5 inline-flex items-center text-sm font-semibold text-accent">
                 Learn more
                 <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
               </div>

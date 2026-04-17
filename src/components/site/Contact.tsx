@@ -3,18 +3,18 @@ import { WHATSAPP_LINK, HOSPITAL_PHONE_TEL, HOSPITAL_PHONE_DISPLAY } from "@/lib
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-24 lg:py-32 bg-background">
+    <section id="contact" className="py-16 sm:py-24 lg:py-32 bg-background">
       <div className="container-page">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs uppercase tracking-[0.25em] text-accent font-bold">Find Us</span>
-          <h2 className="mt-3 text-4xl sm:text-5xl font-bold text-primary leading-tight">Location & Contact</h2>
-          <p className="mt-5 text-lg text-muted-foreground">
+          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight">Location & Contact</h2>
+          <p className="mt-4 sm:mt-5 text-base sm:text-lg text-muted-foreground">
             We're easy to reach in the heart of Tirupati — open every hour of every day.
           </p>
         </div>
 
-        <div className="mt-14 grid lg:grid-cols-12 gap-8">
-          <div className="lg:col-span-7 rounded-3xl overflow-hidden shadow-card border border-border/60 bg-secondary/50 min-h-[420px] relative">
+        <div className="mt-10 sm:mt-14 grid lg:grid-cols-12 gap-6 sm:gap-8">
+          <div className="lg:col-span-7 rounded-2xl sm:rounded-3xl overflow-hidden shadow-card border border-border/60 bg-secondary/50 min-h-[280px] sm:min-h-[420px] relative">
             <iframe
               title="Life Line Hospital Location"
               src="https://www.google.com/maps?q=Reddy+%26+Reddy%27s+Colony,+Tirupati,+Andhra+Pradesh+517501&output=embed"
